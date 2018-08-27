@@ -1,9 +1,10 @@
+/* global store, cuid, Item, $ */
 'use strict';
 
 const Item = (function() {
   const validateName = function(name) {
     if (!name) {
-      throw new Error('Namesssss does not exist');
+      throw new Error('Names does not exist');
     }
   };
   const create = function(name) {
