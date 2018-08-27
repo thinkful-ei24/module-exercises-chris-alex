@@ -1,5 +1,5 @@
 /* global store, cuid, Item */
-
+'use strict';
 // eslint-disable-next-line no-unused-vars
 const shoppingList = (function() {
   function generateItemElement(item) {
@@ -101,6 +101,8 @@ const shoppingList = (function() {
     store.items.splice(index, 1);
   }
 
+
+  
   function editListItemName(id, itemName) {
     const item = store.items.find(item => item.id === id);
     item.name = itemName;
